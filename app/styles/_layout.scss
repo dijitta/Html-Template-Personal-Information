@@ -1,0 +1,116 @@
+.layout-container {
+  .top-menu {
+    display: none;
+    height: 200px;
+    .bar {
+      cursor: pointer;
+      span {
+        color: #b3b3b3;
+        font-size: 2em;
+      }
+    }
+    .brand {
+      // color: #ffffff;
+      font-weight: bold;
+      font-size: 1.5em;
+      padding-top: 0.4rem;
+    }
+  }
+  display: flex;
+  .side-menu {
+    transition: width 0.4s;
+    width: 20%;
+    min-height: 100vh;
+    background: $color-primary;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    .nav-menu {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 5rem;
+      text-align: left;
+      @include nav_menu_item;
+    }
+    .nav-menu-center {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 5rem;
+      text-align: center;
+      @include nav_menu_item;
+    }
+  }
+  .content {
+    height: auto;
+    width: 100%;
+    margin-left: 20%;
+    .content-page {
+      padding: 1.8rem;
+      margin-bottom: 2rem;
+    }
+    .content-page2 {
+      padding: 1.8rem;
+    }
+    .title {
+      font-weight: bold;
+      padding: 1rem 0 1rem 0;
+    }
+    @media screen and (max-width: 600px) {
+      .title {
+        padding-top: 2rem;
+      }
+    }
+  }
+  .content2 {
+    min-height: 100vh;
+    width: 100%;
+    margin-left: 20%;
+    .content-page {
+      padding: 1.8rem;
+      margin-bottom: 2rem;
+    }
+    .content-page2 {
+      padding: 1.8rem;
+    }
+    .title {
+      font-weight: bold;
+      padding: 1rem 0 1rem 0;
+    }
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  position: relative;
+}
+@media screen and (max-width: 600px) {
+  .layout-container {
+    display: block;
+    .top-menu {
+      display: block;
+      z-index: 999;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 80px;
+      padding: 1rem;
+    }
+    .side-menu {
+      display: none;
+      width: -100%;
+      z-index: 1000;
+      .nav-menu {
+        .nav-item-close {
+          display: block;
+        }
+      }
+    }
+    .content {
+      width: 100%;
+      margin: 0;
+    }
+  }
+}

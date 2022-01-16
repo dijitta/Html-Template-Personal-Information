@@ -1,0 +1,23 @@
+.orange{
+    color: #FF9900;
+}
+.white{
+    color: #FFFFFF;
+}
+.btn-orange{
+    background: #FF9900;
+    color: #FFFFFF;
+}
+.btn-orange:hover{
+    background: rgb(212, 128, 2);
+    color: #FFFFFF;
+}
+.active-menu{
+    border-left: #FF9900 3px solid;
+    // border-right: #FF9900 3px solid;
+    padding-left: .4rem;
+    // padding-right: .4rem;
+}
+.active-tab{
+    border-bottom: #FF9900 3px solid;
+}

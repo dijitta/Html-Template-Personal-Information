@@ -1,0 +1,41 @@
+html {
+    scroll-behavior: smooth;
+}
+.theme-1 {
+    @import "global";
+    @import "_variables_theme1";
+    @import "mixins/mixins";
+    @import "animation";
+    @import "layout";
+    @import "home";
+    @import "portfolio";
+    @import "articles";
+    @import "contact";
+    @import "footer";
+}
+
+.theme-2 {
+    @import "global";
+    @import "_variables_theme2";
+    @import "mixins/mixins";
+    @import "animation";
+    @import "layout";
+    @import "home";
+    @import "portfolio";
+    @import "articles";
+    @import "contact";
+    @import "footer";
+}
+
+.theme-3 {
+    @import "global";
+    @import "_variables_theme3";
+    @import "mixins/mixins";
+    @import "animation";
+    @import "layout";
+    @import "home";
+    @import "portfolio";
+    @import "articles";
+    @import "contact";
+    @import "footer";
+}

@@ -1,0 +1,29 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: to;
+  h3 {
+    color: $color-white;
+  }
+  h4 {
+    color: $color-white;
+  }
+  .img-circle{
+    border-radius: 8rem;
+    height: 190px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .home {
+    h3 {
+     font-size: 1.5em;
+    }
+    h4 {
+     font-size: 1.1em;
+    }
+  }
+}
