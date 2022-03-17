@@ -3,11 +3,12 @@ version: "3.8"
 services:
 
   web:
-    image: node:lts
+    build: .
     volumes:
       - ./:/var/www
+      - /var/www/node_modules
     working_dir: /var/www
-    command: yarn install
+    command: npm run build
 
   nginx:
     image: nginx:latest
